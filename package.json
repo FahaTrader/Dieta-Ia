@@ -10,6 +10,7 @@
   "dependencies": {
     "@fastify/cors": "^10.0.0",
     "@google/generative-ai": "^0.19.0",
+    "@types/node": "^22.6.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "fastify": "^5.0.0",
@@ -17,6 +18,11 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "typescript": "^5.6.2"
-  }
+    "typescript": "^5.6.2",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=20.x"
+  },
+  "heroku-postbuild": "npm install --production"
 }

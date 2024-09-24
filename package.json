@@ -1,9 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "fastify": "^5.0.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.1"
   },
   "devDependencies": {

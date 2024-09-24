@@ -15,12 +15,14 @@ const start = async () => {
   app.register(routes);
 
   try {
-    const PORT = parseInt(process.env.PORT || "3333", 10)
-    await app.listen({ port: PORT, host: "0.0.0.0" })
-    console.log(`servidor rodando no http://localhost:3333`)
-  }catch(err){
-    console.log(err);
+    const PORT = Number(process.env.PORT) || 3333;
+    await app.listen({ port: PORT, host: '0.0.0.0' });
+    console.log(`Servidor rodando no http://localhost:${PORT}`);
+  } catch (err) {
+    console.error("Erro ao iniciar o servidor:", err);
   }
-}
+};
+
+
 
 start();

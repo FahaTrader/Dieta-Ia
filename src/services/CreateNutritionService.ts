@@ -29,7 +29,8 @@ class CreateNutritionService {
       console.error("Erro JSON: ", err)
       throw new Error("Failed create.")
     }
-
+    
+    
   }
 }
 

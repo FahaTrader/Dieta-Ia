@@ -1,5 +1,5 @@
-import { FastifyRequest, FastifyReply } from 'fastify';
-import { CreateNutritionService } from '../services/CreateNutritionService';
+import { FastifyRequest, FastifyReply } from 'fastify'
+import { CreateNutritionService } from '../services/CreateNutritionService'
 
 export interface DataProps{
   name: string;
@@ -22,12 +22,13 @@ class CreateNutritionController{
       weight,
       height,
       age,
-      gender,
       objective,
-      level
+      gender,
+      level,
     });
 
     reply.send(nutrition);
+
   }
 }
 
